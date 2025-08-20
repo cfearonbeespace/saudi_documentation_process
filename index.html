@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoRaWAN Shipment to Saudi Arabia: The Process</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-step {
+            border-left-width: 4px;
+            padding-left: 1.5rem;
+            position: relative;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .flow-step:hover {
+            background-color: #fef3e9;
+            cursor: pointer;
+        }
+        .flow-step::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            border-radius: 9999px;
+            background-color: #fff;
+            border-width: 4px;
+        }
+        .flow-connector {
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: -2px;
+            top: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-[#2D2D2D]">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-[#2D2D2D] mb-2">The Path to the Saudi Market</h1>
+            <p class="text-lg md:text-xl text-[#E87722] max-w-3xl mx-auto">An Exporter's Visual Guide for Shipping LoRaWAN Devices to Saudi Arabia</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="introduction" class="bg-white rounded-lg shadow-md p-6 md:p-8 ring-1 ring-gray-200">
+                <h2 class="text-3xl font-bold text-[#2D2D2D] mb-4 text-center">A Three-Phase Journey</h2>
+                <p class="text-center max-w-4xl mx-auto text-gray-600 mb-8">
+                    Importing LoRaWAN gateways and sensors into Saudi Arabia is a structured process managed through the mandatory Saber platform. This journey involves three distinct phases, from initial technical preparation to final customs clearance. Successfully navigating these steps ensures your products meet regulatory standards and reach the market without delay.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="bg-orange-100 p-6 rounded-lg">
+                        <div class="text-5xl font-black text-[#E87722]">14</div>
+                        <p class="font-bold text-[#E87722] mt-1">Total Steps</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg">
+                        <div class="text-5xl font-black text-[#2D2D2D]">3</div>
+                        <p class="font-bold text-[#2D2D2D] mt-1">Distinct Phases</p>
+                    </div>
+                    <div class="bg-[#E87722] p-6 rounded-lg">
+                        <div class="text-5xl font-black text-white">1</div>
+                        <p class="font-bold text-white mt-1">Central Platform: SABER</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="players">
+                <h2 class="text-3xl font-bold text-[#2D2D2D] mb-8 text-center">The Key Players</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center ring-1 ring-gray-200">
+                        <div class="text-4xl mb-3">🏭</div>
+                        <h3 class="text-xl font-bold text-[#2D2D2D]">Manufacturer</h3>
+                        <p class="text-gray-600 mt-2">Produces the devices and provides all necessary technical documentation and test reports.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center ring-1 ring-gray-200">
+                        <div class="text-4xl mb-3">�🇦</div>
+                        <h3 class="text-xl font-bold text-[#2D2D2D]">Importer</h3>
+                        <p class="text-gray-600 mt-2">The mandatory Saudi-based partner who manages the process on the Saber platform.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center ring-1 ring-gray-200">
+                        <div class="text-4xl mb-3">📜</div>
+                        <h3 class="text-xl font-bold text-[#2D2D2D]">Certification Body (CB)</h3>
+                        <p class="text-gray-600 mt-2">A SASO-approved third party that assesses conformity and issues certificates.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center ring-1 ring-gray-200">
+                        <div class="text-4xl mb-3">💻</div>
+                        <h3 class="text-xl font-bold text-[#2D2D2D]">Saber Platform</h3>
+                        <p class="text-gray-600 mt-2">The official online system for registering products and obtaining all required certificates.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process-flow">
+                <h2 class="text-3xl font-bold text-[#2D2D2D] mb-8 text-center">The Certification & Shipment Flowchart</h2>
+                <p class="text-center text-gray-600 -mt-4 mb-8">Click on any step for more details.</p>
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8 ring-1 ring-gray-200">
+                    <div class="relative">
+                        <div class="flow-connector bg-orange-200"></div>
+                        
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold bg-orange-200 text-[#E87722] inline-block px-4 py-2 rounded-md mb-6">Phase 1: Preparation & Technical Documentation</h3>
+                            <div class="space-y-8">
+                                <div class="flow-step border-orange-400 interactive-step" data-step="1. Compile Technical File" data-details="This is the foundational step where the manufacturer gathers all essential product information. The file must include detailed product descriptions, model numbers, Bill of Materials (BoM), circuit schematics, user manuals in both English and Arabic, and a comprehensive risk assessment. This complete package serves as the primary evidence for the conformity assessment.">
+                                    <p class="font-bold">1. Compile Technical File</p>
+                                    <p class="text-sm text-gray-600">Manufacturer gathers all product specs, manuals, and schematics.</p>
+                                </div>
+                                <div class="flow-step border-orange-400 interactive-step" data-step="2. Obtain EU RED Test Reports" data-details="Saudi Arabia's CST bases its approval on the EU's Radio Equipment Directive (RED). This requires contracting an accredited lab to perform tests for RF (Radio Frequency), EMC (Electromagnetic Compatibility), and LVD/Safety. The resulting reports are non-negotiable and prove the device is safe and performs according to international standards.">
+                                    <p class="font-bold">2. Obtain EU RED Test Reports</p>
+                                    <p class="text-sm text-gray-600">Crucial for CST approval, covering RF, EMC, and Safety standards.</p>
+                                </div>
+                                <div class="flow-step border-orange-400 interactive-step" data-step="3. Appoint Saudi Importer" data-details="It is a legal requirement to have a locally licensed partner in Saudi Arabia to act as the Importer of Record. This entity must have a valid Saudi Commercial Registration (CR) and will be responsible for all interactions on the Saber platform, acting as your official representative in the Kingdom.">
+                                    <p class="font-bold">3. Appoint Saudi Importer</p>
+                                    <p class="text-sm text-gray-600">A mandatory partner with a Commercial Registration is required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold bg-[#E87722] text-white inline-block px-4 py-2 rounded-md mb-6">Phase 2: Saber Platform & Product Certification (PCoC)</h3>
+                            <div class="space-y-8">
+                                <div class="flow-step border-[#E87722] interactive-step" data-step="4. Importer Registers Products" data-details="The Saudi Importer logs into their Saber account and enters all product information. A critical part of this step is assigning the correct HS (Harmonized System) code to each product. This code determines which specific technical regulations and standards apply to your device.">
+                                    <p class="font-bold">4. Importer Registers Products</p>
+                                    <p class="text-sm text-gray-600">Importer adds devices to the Saber platform using correct HS codes.</p>
+                                </div>
+                                <div class="flow-step border-[#E87722] interactive-step" data-step="5. Apply for PCoC & CST Approval" data-details="Within Saber, the Importer selects a SASO-approved Certification Body (CB) and initiates the request for the Product Certificate of Conformity (PCoC). The complete technical file and test reports are then uploaded for the CB to conduct its assessment.">
+                                    <p class="font-bold">5. Apply for PCoC & CST Approval</p>
+                                    <p class="text-sm text-gray-600">Importer selects a CB and submits the technical files for review.</p>
+                                </div>
+                                <div class="flow-step border-[#E87722] interactive-step" data-step="6. Issuance of Certificates" data-details="After the CB successfully verifies that the product complies with all relevant SASO and CST standards, and upon payment of fees, the PCoC and CST Approval certificates are issued electronically within the Saber platform. The product is now officially certified for the Saudi market.">
+                                    <p class="font-bold">6. Issuance of Certificates</p>
+                                    <p class="text-sm text-gray-600">After successful review and payment, certificates are issued electronically.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                             <h3 class="text-2xl font-bold bg-gray-600 text-white inline-block px-4 py-2 rounded-md mb-6">Phase 3: Shipment & Customs Clearance (SCoC)</h3>
+                            <div class="space-y-8">
+                                <div class="flow-step border-gray-600 interactive-step" data-step="7. Prepare Shipment Documents" data-details="For each consignment, the manufacturer must prepare standard international shipping documents. This includes a detailed Commercial Invoice, a Packing List specifying the contents of the shipment, and a Certificate of Origin to verify the country of manufacture.">
+                                    <p class="font-bold">7. Prepare Shipment Documents</p>
+                                    <p class="text-sm text-gray-600">Manufacturer prepares the commercial invoice and packing list.</p>
+                                </div>
+                                <div class="flow-step border-gray-600 interactive-step" data-step="8. Request Shipment Certificate (SCoC)" data-details="The SCoC is a transactional certificate. Before the goods are shipped, the Importer must log into Saber and request an SCoC for that specific invoice. This links the physical shipment to the product's valid PCoC, confirming that the goods being sent are certified.">
+                                    <p class="font-bold">8. Request Shipment Certificate (SCoC)</p>
+                                    <p class="text-sm text-gray-600">For each shipment, the Importer requests an SCoC via Saber.</p>
+                                </div>
+                                <div class="flow-step border-gray-600 interactive-step" data-step="9. Final Customs Clearance" data-details="When the shipment arrives at a Saudi port, the SCoC is verified electronically by customs officials through the FASAH portal, which is integrated with Saber. This seamless digital verification allows for swift clearance of the goods into the Kingdom.">
+                                    <p class="font-bold">9. Final Customs Clearance</p>
+                                    <p class="text-sm text-gray-600">The SCoC is verified electronically at customs, releasing the shipment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="certificates">
+                <h2 class="text-3xl font-bold text-[#2D2D2D] mb-8 text-center">Understanding the Certificates</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 ring-1 ring-gray-200">
+                        <h3 class="text-xl font-bold text-[#2D2D2D] mb-4">Certificate Validity Periods</h3>
+                        <p class="text-gray-600 mb-4">The two main product-level certificates have different validity periods. The PCoC must be renewed annually, while the CST approval is valid for two years.</p>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="validityChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 ring-1 ring-gray-200 flex flex-col justify-center text-center">
+                         <h3 class="text-xl font-bold text-[#2D2D2D] mb-4">Shipment Certificate (SCoC)</h3>
+                         <div class="bg-[#2D2D2D] text-white p-8 rounded-lg my-auto">
+                            <div class="text-6xl font-black text-[#E87722]">1</div>
+                            <p class="text-2xl font-bold mt-2">Certificate Per Shipment</p>
+                            <p class="mt-4">The SCoC is transactional and must be issued for every single shipment you send, linking back to a valid PCoC.</p>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-300">
+            <p class="text-gray-500">&copy; 2025 LoRaWAN Exporter Guide. Data based on Saudi regulatory requirements.</p>
+        </footer>
+
+    </div>
+
+    <div id="details-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 md:p-8 relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            <h3 id="modal-title" class="text-2xl font-bold text-[#2D2D2D] mb-4"></h3>
+            <p id="modal-details" class="text-gray-600"></p>
+        </div>
+    </div>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const validityCtx = document.getElementById('validityChart').getContext('2d');
+        const validityChart = new Chart(validityCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Product Certificate (PCoC)', 'CST Type Approval'],
+                datasets: [{
+                    label: 'Validity in Months',
+                    data: [12, 24],
+                    backgroundColor: [
+                        '#E87722',
+                        '#2D2D2D'
+                    ],
+                    borderColor: [
+                        '#E87722',
+                        '#2D2D2D'
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Months'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const modal = document.getElementById('details-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDetails = document.getElementById('modal-details');
+        const closeModalBtn = document.getElementById('close-modal');
+        const interactiveSteps = document.querySelectorAll('.interactive-step');
+
+        interactiveSteps.forEach(step => {
+            step.addEventListener('click', () => {
+                const title = step.getAttribute('data-step');
+                const details = step.getAttribute('data-details');
+                
+                modalTitle.textContent = title;
+                modalDetails.textContent = details;
+                
+                modal.classList.remove('hidden');
+            });
+        });
+
+        const closeModal = () => {
+            modal.classList.add('hidden');
+        };
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+    </script>
+
+</body>
+</html>
+�
